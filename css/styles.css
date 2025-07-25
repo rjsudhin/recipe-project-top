@@ -7,6 +7,15 @@
   padding: 0;
 }
 
+:root {
+  --white-text: #eee;
+  --white-dash-text: #ccc;
+  --home-page-body: #777da7;
+  --footer-bg: #94c9a9;
+  --layout-1: #fe5f55;
+  --layout-2: #885053;
+}
+
 /* Inter Font family */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
@@ -20,4 +29,44 @@ html {
 body {
   width: 100%;
   min-height: 100vh;
+}
+
+#home-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: var(--home-page-body);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#home-page h1 {
+  color: var(--white-text);
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
+}
+
+/* chef icon */
+#home-page h1 .chef-icon {
+  transform: rotate(-20deg);
+  font-size: clamp(0.8rem 2vw, 1.5rem);
+}
+
+#home-page .checkout-text,
+#home-page .bold-icon {
+  color: var(--white-dash-text);
+}
+
+#home-page .checkout-text {
+  font-size: clamp(0.8rem, 3vw, 1rem);
+}
+
+#home-page .bold-icon {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+#home-page .bold-icon:hover {
+  font-size: 2.2rem;
+  cursor: pointer;
 }
