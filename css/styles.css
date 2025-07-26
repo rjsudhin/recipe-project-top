@@ -79,3 +79,21 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+#section1, #section2, #section3 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#section1 {
+  background-image: url('../images/lasagna-big-image.jpg');
+}
+
+#section2 {
+  background-image: url('../images/zoochini-big-image.jpg');
+}
+
+#section3 {
+  background-image: url('../images/biriyani-big-image.jpg');
+}
